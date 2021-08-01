@@ -12,6 +12,7 @@
 - ```package.json``` scripts setup
 - Error handling setup
 - .env setup
+- Helmet for protection
 
 **TYPEORM branch features:**
 - All master's branch features
