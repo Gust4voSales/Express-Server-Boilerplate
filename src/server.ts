@@ -2,11 +2,13 @@ require('dotenv').config()
 import 'express-async-errors'
 import express from 'express'
 import cors from 'cors'
+import helmet from 'helmet'
 import router from './router'
 import ErrorHandler from './middlewares/ErrorHandler'
 
 const app = express()
 
+app.use(helmet())
 app.use(cors()) 
 app.use(express.json())
 
